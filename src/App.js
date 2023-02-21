@@ -19,7 +19,7 @@ function App() {
       setLoading(true)
       e.preventDefault()
       const message =  `Can you generate ${details.noOfQuestions} multiple choice questions on the topic of ${details.topic}? . Each question should have 4  options and the correct answer should be clearly marked as ~.  ${details.topicData}. `
-      axios.post("http://127.0.0.1:5000/questions", { promptMessage: message })
+      axios.post("https://chatgpt-node-hpq5.onrender.com/questions", { promptMessage: message })
         .then((data) => {
           console.log(data.data)
           setLoading(false)
@@ -57,7 +57,7 @@ function App() {
       "optionD": QAS[4].slice(3),
       "answer" : QAS[5].slice(3),
     }
-    axios.post("http://127.0.0.1:5000/add", { promptMessage: message })
+    axios.post("https://chatgpt-node-hpq5.onrender.com/add", { promptMessage: message })
       .then((data) => {
           alert(data.data)
           console.log(data.data);
@@ -69,7 +69,7 @@ function App() {
   
   const getReqQuestions = ()=>{
     console.log(getTopic);
-    axios.post("http://127.0.0.1:5000/getTopic", { promptMessage: getTopic.toLowerCase().trim() })
+    axios.post("https://chatgpt-node-hpq5.onrender.com/getTopic", { promptMessage: getTopic.toLowerCase().trim() })
     .then((data) => {
      console.log(data.data);
      setQ(true)
