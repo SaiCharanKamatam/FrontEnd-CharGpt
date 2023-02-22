@@ -127,7 +127,6 @@ h1{
 #topic{
     font-size: medium;
     margin: 10px;
-    
 }
 .ADB{
     margin-left: 11px;
@@ -181,3 +180,149 @@ h1{
 #topic-input{
     margin: 7px;
 }
+
+
+@media screen and (max-width: 550px) {
+    body {
+      background-color: lightgreen;
+    }
+    #input-box{
+        border: 1px solid brown;
+        padding: 3px;
+        margin-bottom: 4px;
+        width: 340px;
+        border-radius: 2px ;
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        max-height: 200px;
+        justify-content: center;
+    }
+
+    #next{
+        border: none;
+        background-color: rgb(133, 48, 48);
+        width: 37px;
+        padding: 3px;
+        cursor: pointer;
+        border-radius: 3px;
+        color: aliceblue;
+        font-size: 14px;
+    
+    }
+
+    #loading{
+        font-size: large;
+        border: 1px solid rgb(138, 67, 67);
+        width: 300px;
+        padding: 7px;
+        background-color: rgb(69, 150, 69);
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    #topic-label{
+        font-size: medium;
+        font-weight: 300;
+        color: white;
+    }
+    #TBQ{
+        border: none;
+        cursor: pointer;
+        background-color: rgb(11, 184, 54);
+        margin-top: 20px;
+        padding: 5px;
+        font-size: medium;
+        font-weight: 400;
+        font-style: italic;
+        border-radius: 3px;
+    }
+    h1{
+        color: black;
+        font-size: 25px;
+    }
+    #drop-label{
+        font-size: medium;
+        font-weight: 400;
+        color: white;
+    }
+
+    #optionss{
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        color:black;
+        font-size: smaller;
+        margin-left: 11px;
+        font-weight: 500;
+    }
+    .ADB{
+        margin-left: 11px;
+        border: none;
+        background-color: white;
+        width: 96px;
+        padding: 3px;
+        border-radius: 4px;
+        color: black;
+        font-size: 11px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    #topic{
+        font-size: small;
+        margin: 8px;
+    }
+    #topic-input{
+        margin: 5px;
+    }
+
+    #submit-btn{
+        width: 65px;
+        margin: 3px 0;
+        border: none;
+        padding: 2px;
+        border-radius: 3px;
+        background-color: aqua;
+        font-family:cursive;
+        font-weight: 600;
+        font-size: small;
+        height: 22px;
+        cursor: pointer;
+    
+    }
+    .select{
+        border-radius: 2px;
+        padding: 1px;
+    }
+
+    #output-box{
+        /* border: 1px solid brown; */
+        padding: 6px;
+        width: 300px;
+        border-radius: 3px ;
+        background-color: rgb(107, 173, 90);
+        color: white;
+        font-size: small;
+        font-weight: bolder;
+        
+    }
+    #chatgpt-input{
+        width: 320px;
+        height: 54px;
+        max-width: 320px;
+        margin-bottom: 3px;
+        min-height: 54px;
+        max-height: 100px;
+        min-width: 320px;
+        background-color: bisque;
+        border-radius: 3px ;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        align-items: center;
+    }
+  }
