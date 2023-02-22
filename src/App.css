@@ -150,15 +150,30 @@ h1{
 #TBQ{
     border: none;
     cursor: pointer;
-    background-color: rgb(11, 184, 54);
+    background-color: rgb(158, 37, 77);
     margin-top: 20px;
     padding: 5px;
     font-size: large;
     font-weight: 400;
     font-style: italic;
     border-radius: 3px;
+    color: white;
+    width: 300px;
 }
 
+#TBQ:hover{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(170, 71, 104);
+    margin-top: 20px;
+    padding: 5px;
+    font-size: large;
+    font-weight: 400;
+    font-style: italic;
+    border-radius: 3px;
+    color: white;
+    width: 300px;
+}
 .QAP{
     /* border: 1px solid blue; */
     margin: 3px;
@@ -237,13 +252,28 @@ h1{
     #TBQ{
         border: none;
         cursor: pointer;
-        background-color: rgb(11, 184, 54);
+        background-color: rgb(177, 35, 82);
+        margin-top: 20px;
+        color: white;
+        padding: 5px;
+        font-size: medium;
+        font-weight: 400;
+        font-style: italic;
+        width: 230px;
+        border-radius: 3px;
+    }
+    #TBQ:hover{
+        border: none;
+        cursor: pointer;
+        background-color: rgb(170, 71, 104);
         margin-top: 20px;
         padding: 5px;
         font-size: medium;
         font-weight: 400;
         font-style: italic;
         border-radius: 3px;
+        color: white;
+        width: 230px;
     }
     h1{
         color: black;
@@ -268,7 +298,7 @@ h1{
         margin-left: 11px;
         border: none;
         background-color: white;
-        width: 96px;
+        width: 120px;
         padding: 3px;
         border-radius: 4px;
         color: black;
