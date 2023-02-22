@@ -4,6 +4,7 @@ body{
     justify-content: center;
     align-content: center;
     background-color:rgb(226, 212, 212);
+    width: 96vw;
 }
 .App{
     display: flex;
@@ -169,6 +170,7 @@ h1{
     flex-direction: column;
     background-color: antiquewhite;
     background-color: rgb(107, 173, 90);
+    font-size: larger;
     color: white;
     padding: 10px;
     /* justify-content: center; */
@@ -183,8 +185,12 @@ h1{
 
 
 @media screen and (max-width: 550px) {
-    body {
-      background-color: lightgreen;
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color:rgb(226, 212, 212);
+        width: 96vw;
     }
     #input-box{
         border: 1px solid brown;
