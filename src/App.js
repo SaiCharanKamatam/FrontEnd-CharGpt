@@ -20,15 +20,16 @@ function App() {
       e.preventDefault()
       // const message =  `Can you generate ${details.noOfQuestions} multiple choice questions on the topic of ${details.topic}? . Each question should have 4 options and the correct answer should be clearly marked as ~. and ${details.noOfQuestions} True or False questions and answer should be clearly marked as True or False  ${details.topicData}. `
     
-      const message = `Format1\n
+      const message = 
+      `Format1\n
       1.Question statement\n
       A.option\n
       B.option\n
       C.option\n
       D.option\n
-      Answer:  Answer\n
-      difficulty: hard/easy/medium\n
-      explanation: Sentence explaining the answer\n\n
+      Answer:Answer\n
+      difficulty:hard/medium/easy\n
+      explanation:Sentence explaining the answer\n\n
       
       Format2\n
       1.Question statement\n
@@ -36,17 +37,17 @@ function App() {
       B.option\n
       C.option\n
       D.option\n
-      Answer: more than one correct answer\n
-      difficulty: hard/easy/medium\n
-      explanation: Sentence explaining the answer\n\n
+      Answer:more than one correct answer\n
+      difficulty:hard/medium/easy\n
+      explanation:Sentence explaining the answer\n\n
       
       Format3\n
       1.Question statement\n 
-      Answer: True/False\n
-      Level of difficulty: Easy/Medium/Hard\n
-      Explanation: Sentence explaining the answer\n\n
+      Answer:True/False\n
+      difficulty:hard/medium/easy\n
+      Explanation:Sentence explaining the answer\n\n
       
-      Generate ${details.noOfQuestions} questions in Format1, ${details.noOfQuestions} questions in Format2 and ${details.noOfQuestions} questions in Format3 with an answer  on the subject ${"Maths"}, topic ${"Vectors"}, sub-topic ${"2D Vectors"}`
+      Generate ${details.noOfQuestions} questions in Format1, ${details.noOfQuestions} questions in Format2 and ${details.noOfQuestions} questions in Format3 with an answer  on the subject ${"Physics"}, topic ${"Optics"}, sub-topic ${"reflection"}`
       // the values can be given dynamically between the flower braces 
 
       axios.post("http://localhost:5000/questions", { promptMessage: message , len : parseInt(details.noOfQuestions) })
